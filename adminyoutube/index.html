@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Youtube - Dewibola</title>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-gray-100 font-sans min-h-screen">
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Bagian Login Admin -->
+        <div id="admin-modal" class="p-8 bg-gray-900 rounded-xl shadow-2xl border border-red-900 hidden">
+            <h3 class="text-2xl font-bold text-center text-red-500 mb-6">Login Admin</h3>
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="username" class="font-semibold text-red-200 block">Username</label>
+                    <input type="text" id="username" class="w-full mt-2 p-3 bg-gray-800 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Masukkan username">
+                </div>
+                <div>
+                    <label for="password" class="font-semibold text-red-200 block">Password</label>
+                    <input type="password" id="password" class="w-full mt-2 p-3 bg-gray-800 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Masukkan password">
+                </div>
+                <div class="text-center pt-4">
+                    <button type="submit" class="bg-red-600 text-white font-bold py-2 px-6 rounded-full hover:bg-red-700 transition-transform duration-300 transform hover:scale-105 shadow-md w-full">Login</button>
+                </div>
+                <p id="login-message" class="text-center text-sm text-red-400 mt-4"></p>
+            </form>
+        </div>
+        
+        <!-- Bagian Panel Admin Video -->
+        <section id="admin-panel" class="p-8 rounded-2xl shadow-2xl border border-red-900 mt-12 bg-gray-900 hidden">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold text-yellow-500">Panel Admin Video Tutorial</h2>
+                <button id="logout-btn" class="bg-red-600 text-white font-bold py-2 px-4 rounded-full hover:bg-red-700 transition-colors">Logout</button>
+            </div>
+            <p class="text-center text-gray-400 mb-8">Kelola video YouTube yang ditampilkan di halaman ini.</p>
+
+            <form id="video-form" class="space-y-4">
+                <div>
+                    <label for="video-url" class="font-semibold text-red-200 block">YouTube Video URL</label>
+                    <input type="text" id="video-url" placeholder="Contoh: https://www.youtube.com/watch?v=VIDEO_ID" class="w-full mt-2 p-3 bg-gray-800 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+                <div>
+                    <label for="video-title" class="font-semibold text-red-200 block">Judul Video</label>
+                    <input type="text" id="video-title" placeholder="Masukkan judul video" class="w-full mt-2 p-3 bg-gray-800 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+                <div>
+                    <label for="video-desc" class="font-semibold text-red-200 block">Deskripsi Video</label>
+                    <textarea id="video-desc" placeholder="Masukkan deskripsi singkat video" rows="3" class="w-full mt-2 p-3 bg-gray-800 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                </div>
+                <div class="flex justify-center pt-4">
+                    <button type="submit" id="submit-video-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-full hover:bg-red-700 transition-transform duration-300 transform hover:scale-105 shadow-md w-full sm:w-auto">Tambah Video</button>
+                    <button type="button" id="cancel-edit-btn" class="hidden ml-4 bg-gray-500 text-white font-bold py-2 px-6 rounded-full hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105 shadow-md w-full sm:w-auto">Batal Edit</button>
+                </div>
+            </form>
+
+            <div id="admin-video-list" class="mt-8 space-y-4">
+                <!-- Video items will be dynamically inserted here -->
+            </div>
+            <div id="admin-message" class="text-center mt-4 text-red-400"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
