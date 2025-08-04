@@ -221,11 +221,15 @@
                 
                 <div id="odds-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     <!-- Odds inputs are added here dynamically -->
-                    <!-- Items awal, status diatur oleh JS -->
                     <div class="odd-group p-4 bg-gray-800 rounded-lg border border-red-900 shadow-sm" data-id="1">
                         <label class="font-semibold text-red-200 block">Odds Tim 1</label>
                         <div class="flex items-center space-x-2 mt-2">
                             <input type="number" step="0.01" value="1.85" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            <button class="remove-btn text-red-400 hover:text-red-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
                         </div>
                         <div class="flex mt-3 space-x-2">
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white" data-status="win">Win</button>
@@ -238,6 +242,11 @@
                         <label class="font-semibold text-red-200 block">Odds Tim 2</label>
                         <div class="flex items-center space-x-2 mt-2">
                             <input type="number" step="0.01" value="2.10" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            <button class="remove-btn text-red-400 hover:text-red-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
                         </div>
                         <div class="flex mt-3 space-x-2">
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white" data-status="win">Win</button>
@@ -250,6 +259,11 @@
                         <label class="font-semibold text-red-200 block">Odds Tim 3</label>
                         <div class="flex items-center space-x-2 mt-2">
                             <input type="number" step="0.01" value="1.90" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            <button class="remove-btn text-red-400 hover:text-red-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
                         </div>
                         <div class="flex mt-3 space-x-2">
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white" data-status="win">Win</button>
@@ -276,91 +290,8 @@
             <h2 class="text-3xl font-bold text-yellow-500 mb-6">
                 BONUS Tutorial Video - Selengkapnya..
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Video 1 -->
-                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-xl shadow-lg border border-gray-800">
-                    <div class="video-container w-full">
-                        <iframe
-                            src="https://www.youtube.com/embed/2ThQOAkZapg?si=MdB2ndMYMjltyIPU"
-                            title="Video 1"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h4 class="mt-4 text-lg font-semibold text-gray-100">Video 1: Tutorial 1X2</h4>
-                    <p class="text-sm text-gray-400 mt-2">CARA PASANG MIX PARLAY 1X2 | TUTORIAL PALING MUDAH DIPAHAMI.</p>
-                </div>
-                <!-- Video 2 -->
-                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-xl shadow-lg border border-gray-800">
-                    <div class="video-container w-full">
-                        <iframe
-                            src="https://www.youtube.com/embed/bvpYUj4z014?si=2ZdBMpTTHiwFCANu"
-                            title="Video 2"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h4 class="mt-4 text-lg font-semibold text-gray-100">Video 2: Pasang Parlay Paling Mudah</h4>
-                    <p class="text-sm text-gray-400 mt-2">CARA MUDAH BERMAIN PARLAY | TUTORIAL MIX PARLAY PALING MUDAH DIPAHAMI.</p>
-                </div>
-                <!-- Video 3 -->
-                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-xl shadow-lg border border-gray-800">
-                    <div class="video-container w-full">
-                        <iframe
-                            src="https://www.youtube.com/embed/IkR2oTRmZoE?si=xwfZF-5-mqLW27tS"
-                            title="Video 3"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h4 class="mt-4 text-lg font-semibold text-gray-100">Video 3: SINGLE BET HDP (HANDICAP)</h4>
-                    <p class="text-sm text-gray-400 mt-2">CARA BERMAIN SINGLE BET HDP (HANDICAP) VOOR | TUTORIAL PALING MUDAH DIPAHAMI.</p>
-                </div>
-                <!-- Video 4 -->
-                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-xl shadow-lg border border-gray-800">
-                    <div class="video-container w-full">
-                        <iframe
-                            src="https://www.youtube.com/embed/CRJSnL_6tss?si=YTnyfDECO5fOtMyH"
-                            title="Video 4"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h4 class="mt-4 text-lg font-semibold text-gray-100">Video 4: SINGLE BET OU OVER-UNDER</h4>
-                    <p class="text-sm text-gray-400 mt-2">CARA BERMAIN SINGLE BET OU OVER-UNDER | TUTORIAL PALING MUDAH DIPAHAMI.</p>
-                </div>
-                <!-- Video 5 -->
-                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-xl shadow-lg border border-gray-800">
-                    <div class="video-container w-full">
-                        <iframe
-                            src="https://www.youtube.com/embed/fyQL4ZWYevA?si=dUhcmN8X-He2NKyo"
-                            title="Video 5"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h4 class="mt-4 text-lg font-semibold text-gray-100">Video 5: SINGLE BET 1x2</h4>
-                    <p class="text-sm text-gray-400 mt-2">CARA BERMAIN SINGLE BET 1x2 | TUTORIAL PALING MUDAH DIPAHAMI.</p>
-                </div>
-                <!-- Video 6 -->
-                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-xl shadow-lg border border-gray-800">
-                    <div class="video-container w-full">
-                        <iframe
-                            src="https://www.youtube.com/embed/zJCrtOlkznk?si=lJXDE335wZsuecvt"
-                            title="Video 6"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h4 class="mt-4 text-lg font-semibold text-gray-100">Video 6: CARA DAFTAR SITUS DEWIBOLA.</h4>
-                    <p class="text-sm text-gray-400 mt-2">TUTORIAL CARA DAFTAR SITUS DEWIBOLA | CARA BUAT AKUN SITUS DEWIBOLA.</p>
-                </div>
+            <div id="video-list-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Video cards will be dynamically inserted here by JavaScript -->
             </div>
             <p class="text-sm text-yellow-500 mt-6">
                 *Video-video di atas hanya sebagai contoh. Anda bisa lebih memahami bilamana terus belajar dan mencoba memahami lebih dalam lagi.
@@ -483,7 +414,7 @@
                     </li>
                 </ol>
                 <div class="my-6 text-center">
-                    <img src="https://placehold.co/800x400/1e293b/d1d5db?text=Analisis+Parlay" alt="Visualisasi analisis parlay di Dewibola" class="rounded-xl shadow-lg mx-auto w-full max-w-xl">
+                    <img src="images/analisis-parlay-di-platform-dewibola.webp" alt="Visualisasi analisis parlay di Dewibola" class="rounded-xl shadow-lg mx-auto w-full max-w-xl">
                     <p class="text-sm text-gray-500 mt-2 italic">
                           Ilustrasi antarmuka analisis parlay di platform Dewibola.
                     </p>
