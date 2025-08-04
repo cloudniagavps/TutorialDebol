@@ -13,7 +13,7 @@
     <link rel="canonical" href="/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://placehold.co/32x32/ff0000/ffffff?text=DB">
+    <link rel="icon" type="image/png" href="favicon.ico">
 
     <!-- Schema.org JSON-LD untuk SEO yang lebih baik -->
     <script type="application/ld+json">
@@ -219,15 +219,15 @@
                     <input type="number" id="stake" value="100000" class="w-full mt-2 p-3 bg-gray-800 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
                 </div>
                 
-                <div id="odds-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div id="odds-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     <!-- Odds inputs are added here dynamically -->
                     <div class="odd-group p-4 bg-gray-800 rounded-lg border border-red-900 shadow-sm">
                         <label class="font-semibold text-red-200 block">Odds Tim 1</label>
                         <div class="flex items-center space-x-2 mt-2">
-                            <input type="number" step="0.01" value="1.85" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500" data-status="win">
+                            <input type="number" step="0.01" value="1.85" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
                         </div>
                         <div class="flex mt-3 space-x-2">
-                            <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white" data-status="win">Win</button>
+                            <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white status-active" data-status="win">Win</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-indigo-600 text-white opacity-50" data-status="wh">WH</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-yellow-600 text-white opacity-50" data-status="lh">LH</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-red-600 text-white opacity-50" data-status="lose">Lose</button>
@@ -236,10 +236,10 @@
                     <div class="odd-group p-4 bg-gray-800 rounded-lg border border-red-900 shadow-sm">
                         <label class="font-semibold text-red-200 block">Odds Tim 2</label>
                         <div class="flex items-center space-x-2 mt-2">
-                            <input type="number" step="0.01" value="2.10" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500" data-status="win">
+                            <input type="number" step="0.01" value="2.10" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
                         </div>
                         <div class="flex mt-3 space-x-2">
-                            <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white" data-status="win">Win</button>
+                            <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white status-active" data-status="win">Win</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-indigo-600 text-white opacity-50" data-status="wh">WH</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-yellow-600 text-white opacity-50" data-status="lh">LH</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-red-600 text-white opacity-50" data-status="lose">Lose</button>
@@ -248,10 +248,10 @@
                     <div class="odd-group p-4 bg-gray-800 rounded-lg border border-red-900 shadow-sm">
                         <label class="font-semibold text-red-200 block">Odds Tim 3</label>
                         <div class="flex items-center space-x-2 mt-2">
-                            <input type="number" step="0.01" value="1.90" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500" data-status="win">
+                            <input type="number" step="0.01" value="1.90" class="odd-input flex-1 p-3 bg-gray-900 border-red-900 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500">
                         </div>
                         <div class="flex mt-3 space-x-2">
-                            <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white" data-status="win">Win</button>
+                            <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-green-600 text-white status-active" data-status="win">Win</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-indigo-600 text-white opacity-50" data-status="wh">WH</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-yellow-600 text-white opacity-50" data-status="lh">LH</button>
                             <button class="status-btn flex-1 py-1.5 rounded-lg text-sm font-medium bg-red-600 text-white opacity-50" data-status="lose">Lose</button>
